@@ -26,19 +26,9 @@ pipeline {
                 echo 'Job complete!'
             }
         }
-        stage('Post Completion') {
+        stage('Confirm Diff Branch') {
             steps {
-                echo 'Lining up Post Completion Tasks...'
-            }
-        }
-        stage('Deploy To Dev') {
-            steps {
-                echo 'Deploying to Dev'
-            }
-        }
-        stage('Deploy To Prod') {
-            steps {
-                echo 'Deploying to Prod'
+                echo 'This confirms it ran from the Pipeline Branch...'
             }
         }
     }
