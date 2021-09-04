@@ -31,5 +31,15 @@ pipeline {
                 echo 'Lining up Post Completion Tasks...'
             }
         }
+        stage('Deploy To Dev') {
+            steps {
+                echo 'Deploying to Dev'
+            }
+        }
+        stage('Deploy To Prod') {
+            steps {
+                echo 'Deploying to Prod'
+            }
+        }
     }
 }
